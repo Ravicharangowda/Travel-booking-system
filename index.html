@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wanderly Travel Booking | Book Trips to Goa, Manali, Kerala &amp; More</title>
+  <meta name="description" content="Wanderly is an easy online travel booking system. Search trips, compare popular destinations like Goa, Manali, Kerala and Jaipur, and book your holiday package in minutes.">
+  <meta name="keywords" content="travel booking, online trip booking, holiday packages, India tour packages, Goa trip, Manali trip, Kerala backwaters, cheap travel deals, book tours online">
+  <meta name="author" content="Wanderly Travel">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f766e">
+
+  <!-- Social sharing tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wanderly Travel Booking | Explore the World, One Journey at a Time">
+  <meta property="og:description" content="Search and book holiday packages to the best destinations in India. Simple, fast and secure.">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230f766e'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Wanderly Travel Booking",
+    "description": "Online travel booking system for holiday packages and trips across India.",
+    "telephone": "+91-98765-43210",
+    "email": "hello@wanderly.example",
+    "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressRegion": "Karnataka", "addressCountry": "IN" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="topbar" id="top">
+    <a href="#home" class="brand" aria-label="Wanderly home">
+      <span class="brand-mark" aria-hidden="true">✈</span>
+      <span>Wander<span class="brand-accent">ly</span></span>
+    </a>
+    <nav id="mainNav" aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#destinations" class="nav-link">Destinations</a>
+      <a href="#booking" class="nav-link">Booking</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#booking" class="nav-cta">Book Now</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="eyebrow">TRAVEL BOOKING SYSTEM</p>
+        <h1>Explore the World, <span>One Journey at a Time</span></h1>
+        <p class="hero-copy">Discover handpicked destinations, compare prices and book your dream holiday in just a few clicks. No hidden charges, no hassle.</p>
+        <div class="hero-buttons">
+          <a href="#destinations" class="primary-btn">Explore Destinations</a>
+          <a href="#booking" class="ghost-btn">Book a Trip</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>12+</strong><span>Destinations</span></li>
+          <li><strong>25k+</strong><span>Happy Travelers</span></li>
+          <li><strong>4.8★</strong><span>Average Rating</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-art" aria-hidden="false">
+        <svg class="hero-svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of mountains, sea and an airplane in the sky">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#8fd3e8"/>
+              <stop offset="1" stop-color="#eaf6ea"/>
+            </linearGradient>
+            <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#3b9ab0"/>
+              <stop offset="1" stop-color="#1f6f86"/>
+            </linearGradient>
+          </defs>
+          <rect width="600" height="400" fill="url(#sky)"/>
+          <circle cx="470" cy="95" r="44" fill="#ffd77e"/>
+          <g fill="#fff" opacity=".85">
+            <ellipse cx="110" cy="90" rx="46" ry="14"/><ellipse cx="135" cy="80" rx="28" ry="16"/>
+            <ellipse cx="360" cy="140" rx="38" ry="11"/><ellipse cx="380" cy="132" rx="22" ry="12"/>
+          </g>
+          <polygon points="-40,330 110,150 260,330" fill="#80b9ad"/>
+          <polygon points="140,330 310,90 480,330" fill="#5e9c91"/>
+          <polygon points="310,90 280,135 310,125 335,140" fill="#ffffff" opacity=".8"/>
+          <polygon points="380,330 520,170 660,330" fill="#a2c9b5"/>
+          <rect y="320" width="600" height="80" fill="url(#sea)"/>
+          <path d="M0 345 Q30 335 60 345 T120 345 T180 345 T240 345 T300 345 T360 345 T420 345 T480 345 T540 345 T600 345" fill="none" stroke="#ffffff" stroke-opacity=".5" stroke-width="3"/>
+          <path d="M0 372 Q30 362 60 372 T120 372 T180 372 T240 372 T300 372 T360 372 T420 372 T480 372 T540 372 T600 372" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3"/>
+          <g class="svg-plane"><text x="200" y="70" font-size="44" transform="rotate(-12 200 70)">✈️</text></g>
+        </svg>
+        <div class="art-label">🌍 Next stop: <span>Anywhere you dream of</span></div>
+      </div>
+    </section>
+
+    <!-- ============ SEARCH TRIPS ============ -->
+    <section class="search-card reveal" aria-labelledby="searchTitle">
+      <div class="section-intro">
+        <h2 id="searchTitle">Find Your Perfect Trip</h2>
+        <p class="muted">Tell us where you want to go and we will show matching destinations.</p>
+      </div>
+      <form id="searchForm" class="search-form" novalidate>
+        <label class="field">
+          <span>From Location</span>
+          <input type="text" id="fromLoc" list="cityList" placeholder="e.g. Bengaluru" autocomplete="off" required>
+          <small class="error" aria-live="polite"></small>
+        </label>
+        <label class="field">
+          <span>Destination</span>
+          <select id="toDest"><option value="">Anywhere</option></select>
+          <small class="error" aria-live="polite"></small>
+        </label>
+        <label class="field">
+          <span>Departure Date</span>
+          <input type="date" id="departDate" required>
+          <small class="error" aria-live="polite"></small>
+        </label>
+        <label class="field">
+          <span>Return Date</span>
+          <input type="date" id="returnDate" required>
+          <small class="error" aria-live="polite"></small>
+        </label>
+        <label class="field">
+          <span>Travelers</span>
+          <select id="travelers"></select>
+          <small class="error" aria-live="polite"></small>
+        </label>
+        <button type="submit" class="primary-btn search-btn">🔍 Search Trips</button>
+      </form>
+      <datalist id="cityList">
+        <option value="Bengaluru"></option><option value="Mumbai"></option><option value="Delhi"></option>
+        <option value="Chennai"></option><option value="Hyderabad"></option><option value="Kolkata"></option>
+        <option value="Pune"></option><option value="Ahmedabad"></option><option value="Kochi"></option>
+        <option value="Jaipur"></option><option value="Lucknow"></option><option value="Chandigarh"></option>
+      </datalist>
+      <p class="message" id="searchMsg" role="status" aria-live="polite"></p>
+    </section>
+
+    <!-- ============ DESTINATIONS ============ -->
+    <section class="section destinations" id="destinations" aria-labelledby="destTitle">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">POPULAR DESTINATIONS</p>
+          <h2 id="destTitle">Top Places to Visit This Season</h2>
+        </div>
+        <p class="muted">Prices are per person and include stay, breakfast and local sightseeing.</p>
+      </div>
+
+      <div class="filter-bar reveal">
+        <label class="search-box">
+          <span class="sr-only">Search destinations</span>
+          <input type="search" id="destSearch" placeholder="🔍 Search by name, state or type (beach, hills...)" autocomplete="off">
+        </label>
+        <label class="select-wrap">
+          <span class="sr-only">Budget</span>
+          <select id="budgetFilter">
+            <option value="all">Any budget</option>
+            <option value="low">Under ₹10,000</option>
+            <option value="mid">₹10,000 – ₹20,000</option>
+            <option value="high">Above ₹20,000</option>
+          </select>
+        </label>
+        <label class="select-wrap">
+          <span class="sr-only">Sort by</span>
+          <select id="sortFilter">
+            <option value="popular">Sort: Most popular</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+            <option value="name">Name: A to Z</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="chips reveal" id="catFilters" role="group" aria-label="Filter by category">
+        <button type="button" class="chip active" data-cat="all">All</button>
+        <button type="button" class="chip" data-cat="Beach">🏖️ Beach</button>
+        <button type="button" class="chip" data-cat="Mountain">🏔️ Mountain</button>
+        <button type="button" class="chip" data-cat="Heritage">🏰 Heritage</button>
+        <button type="button" class="chip" data-cat="Nature">🌿 Nature</button>
+        <button type="button" class="chip" data-cat="Adventure">🧗 Adventure</button>
+        <button type="button" class="chip" data-cat="Spiritual">🛕 Spiritual</button>
+      </div>
+
+      <div class="result-row">
+        <p id="resultCount" class="muted" role="status" aria-live="polite"></p>
+        <button type="button" class="text-btn" id="resetFilters">Reset filters</button>
+      </div>
+
+      <div class="destination-grid" id="destGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <p>😕 No destinations match your search.</p>
+        <button type="button" class="primary-btn" id="emptyReset">Show all destinations</button>
+      </div>
+    </section>
+
+    <!-- ============ WHY US ============ -->
+    <section class="features reveal" aria-label="Why book with us">
+      <div><div class="feature-icon">💰</div><h3>Best Price Guarantee</h3><p>Transparent per-person pricing with no hidden fees. What you see is what you pay.</p></div>
+      <div><div class="feature-icon">🛡️</div><h3>Safe &amp; Secure</h3><p>Your details are kept private and your trip is confirmed instantly with a booking ID.</p></div>
+      <div><div class="feature-icon">🎧</div><h3>24/7 Support</h3><p>Our travel experts are available around the clock to help before and during your trip.</p></div>
+    </section>
+
+    <!-- ============ BOOKING ============ -->
+    <section class="section booking" id="booking" aria-labelledby="bookTitle">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">BOOK YOUR TRIP</p>
+          <h2 id="bookTitle">Reserve Your Seat in 1 Minute</h2>
+        </div>
+        <p class="muted">Fill in the form below and get an instant booking confirmation.</p>
+      </div>
+
+      <div class="booking-layout">
+        <form id="bookingForm" class="card form-card reveal" novalidate>
+          <div class="form-grid">
+            <label class="field">
+              <span>Full Name</span>
+              <input type="text" id="bName" placeholder="Your full name" autocomplete="name" required>
+              <small class="error" aria-live="polite"></small>
+            </label>
+            <label class="field">
+              <span>Email Address</span>
+              <input type="email" id="bEmail" placeholder="you@example.com" autocomplete="email" required>
+              <small class="error" aria-live="polite"></small>
+            </label>
+            <label class="field">
+              <span>Phone Number</span>
+              <input type="tel" id="bPhone" placeholder="+91 98765 43210" autocomplete="tel" required>
+              <small class="error" aria-live="polite"></small>
+            </label>
+            <label class="field">
+              <span>Destination</span>
+              <select id="bDest" required><option value="">Select a destination</option></select>
+              <small class="error" aria-live="polite"></small>
+            </label>
+            <label class="field">
+              <span>Travel Date</span>
+              <input type="date" id="bDate" required>
+              <small class="error" aria-live="polite"></small>
+            </label>
+            <label class="field">
+              <span>Number of Passengers</span>
+              <input type="number" id="bPass" min="1" max="20" value="1" required>
+              <small class="error" aria-live="polite"></small>
+            </label>
+          </div>
+          <button type="submit" class="primary-btn full-btn">✅ Confirm Booking</button>
+          <p class="small-note">This is a demo project. Bookings are saved only in your own browser and no payment is taken.</p>
+        </form>
+
+        <aside class="card summary-card reveal" aria-live="polite">
+          <h3>Trip Summary</h3>
+          <div id="summaryBox" class="summary-box">
+            <p class="muted">Select a destination to see the estimated price.</p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="my-bookings reveal">
+        <div class="section-heading small">
+          <h3>My Bookings</h3>
+          <button type="button" class="text-btn" id="clearBookings">Clear all</button>
+        </div>
+        <div class="booking-list" id="bookingList"></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about" aria-labelledby="aboutTitle">
+      <div class="about-grid">
+        <div class="reveal">
+          <p class="eyebrow">ABOUT US</p>
+          <h2 id="aboutTitle">We Make Travel Simple, Affordable and Memorable</h2>
+          <p class="about-copy">Wanderly started with one idea: planning a holiday should be as enjoyable as the holiday itself. Our team of travel lovers carefully selects destinations, hotels and activities so you can book with confidence.</p>
+          <p class="about-copy">Whether you want a relaxing beach weekend, a mountain adventure or a cultural heritage tour, we have a package that fits your budget and your schedule.</p>
+          <ul class="tick-list">
+            <li>Handpicked and verified destinations</li>
+            <li>Flexible dates and group sizes</li>
+            <li>Instant confirmation with a unique booking ID</li>
+            <li>Friendly support team ready to help</li>
+          </ul>
+        </div>
+        <div class="stats-grid reveal">
+          <div class="stat"><strong data-count="25000" data-suffix="+">0</strong><span>Happy Travelers</span></div>
+          <div class="stat"><strong data-count="12" data-suffix="">0</strong><span>Destinations</span></div>
+          <div class="stat"><strong data-count="150" data-suffix="+">0</strong><span>Partner Hotels</span></div>
+          <div class="stat"><strong data-count="8" data-suffix=" yrs">0</strong><span>Of Experience</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contactTitle">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">CONTACT</p>
+          <h2 id="contactTitle">We Would Love to Hear from You</h2>
+        </div>
+        <p class="muted">Questions about a trip? Send us a message and we will reply soon.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <div class="info-card"><span class="info-icon">📍</span><div><h3>Our Office</h3><p>12 MG Road, Bengaluru, Karnataka 560001, India</p></div></div>
+          <div class="info-card"><span class="info-icon">📞</span><div><h3>Phone</h3><p><a href="tel:+919876543210">+91 98765 43210</a></p></div></div>
+          <div class="info-card"><span class="info-icon">✉️</span><div><h3>Email</h3><p><a href="mailto:hello@wanderly.example">hello@wanderly.example</a></p></div></div>
+          <div class="info-card"><span class="info-icon">🕘</span><div><h3>Working Hours</h3><p>Mon – Sat: 9:00 AM – 7:00 PM</p></div></div>
+        </div>
+        <form id="contactForm" class="card form-card reveal" novalidate>
+          <label class="field">
+            <span>Your Name</span>
+            <input type="text" id="cName" placeholder="Your name" autocomplete="name" required>
+            <small class="error" aria-live="polite"></small>
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" id="cEmail" placeholder="you@example.com" autocomplete="email" required>
+            <small class="error" aria-live="polite"></small>
+          </label>
+          <label class="field">
+            <span>Subject</span>
+            <input type="text" id="cSubject" placeholder="How can we help?" required>
+            <small class="error" aria-live="polite"></small>
+          </label>
+          <label class="field">
+            <span>Message</span>
+            <textarea id="cMessage" rows="5" placeholder="Write your message here..." required></textarea>
+            <small class="error" aria-live="polite"></small>
+          </label>
+          <button type="submit" class="primary-btn full-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <a href="#home" class="brand footer-brand"><span class="brand-mark" aria-hidden="true">✈</span><span>Wanderly</span></a>
+        <p>Explore the World, One Journey at a Time. Your trusted partner for memorable holidays.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#booking">Booking</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>📍 12 MG Road, Bengaluru, India</li>
+          <li>📞 <a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li>✉️ <a href="mailto:hello@wanderly.example">hello@wanderly.example</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">in</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">X</a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Wanderly Travel Booking System. College Web Programming Project.</p>
+  </footer>
+
+  <!-- ============ CONFIRMATION DIALOG ============ -->
+  <dialog id="confirmDialog" aria-labelledby="confirmTitle">
+    <button type="button" class="dialog-close" id="closeConfirm" aria-label="Close">×</button>
+    <div class="success-icon">✔</div>
+    <h2 id="confirmTitle">Booking Confirmed!</h2>
+    <div id="confirmBody" class="trip-summary"></div>
+    <div class="dialog-actions">
+      <button type="button" class="ghost-btn dark" id="printConfirm">🖨 Print</button>
+      <button type="button" class="primary-btn" id="doneConfirm">Done</button>
+    </div>
+  </dialog>
+
+  <button type="button" class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
