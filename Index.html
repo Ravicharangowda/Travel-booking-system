@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        .container {
+            background-color: white;
+            width: 350px;
+            margin: 50px auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        input, select, button {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Travel Booking</h1>
+        <p>Book Your Journey</p>
+
+        <form onsubmit="bookTravel(event)">
+            <input type="text" placeholder="Enter Your Name" required>
+
+            <select required>
+                <option value="">Select Destination</option>
+                <option>Bangalore</option>
+                <option>Mysore</option>
+                <option>Chennai</option>
+                <option>Hyderabad</option>
+            </select>
+
+            <label>Travel Date:</label>
+            <input type="date" required>
+
+            <select required>
+                <option value="">Select Travel Mode</option>
+                <option>Bus</option>
+                <option>Train</option>
+                <option>Flight</option>
+            </select>
+
+            <input type="number" placeholder="Number of Passengers"
+                   min="1" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function bookTravel(event) {
+            event.preventDefault();
+            document.getElementById("message").innerHTML =
+                "Your booking details have been submitted!";
+        }
+    </script>
+
+</body>
+</html>
