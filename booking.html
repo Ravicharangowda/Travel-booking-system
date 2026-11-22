@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wanderly - Book Your Trip</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f7f6; padding: 20px; }
+    .container { max-width: 450px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    h2 { color: #0f6e56; text-align: center; }
+    label { display: block; margin-top: 12px; font-weight: bold; }
+    input, select, button { width: 100%; padding: 10px; margin-top: 6px; border-radius: 6px; border: 1px solid #ccc; box-sizing: border-box; }
+    button { background: #0f6e56; color: white; border: none; font-size: 16px; cursor: pointer; margin-top: 18px; }
+    button:hover { background: #0b5341; }
+    .success { margin-top: 15px; padding: 12px; background: #e6f4ea; color: #137333; border-radius: 6px; display: none; }
+    .booking-list { margin-top: 20px; }
+    .card { background: #f9f9f9; padding: 10px; border-left: 4px solid #0f6e56; margin-bottom: 10px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Book Your Trip</h2>
+  <form id="bookingForm">
+    <label>Full Name</label>
+    <input type="text" id="name" placeholder="Enter your name" required />
+
+    <label>Email or Phone</label>
+    <input type="text" id="contact" placeholder="Enter phone or email" required />
+
+    <label>Select Destination</label>
+    <select id="destination" required>
+      <option value="Manali - ₹14,500">Manali (5 Days) - ₹14,500</option>
+      <option value="Goa - ₹8,500">Goa (3 Days) - ₹8,500</option>
+      <option value="Kerala - ₹12,500">Kerala (4 Days) - ₹12,500</option>
+    </select>
+
+    <label>Travel Date</label>
+    <input type="date" id="date" required />
+
+    <label>Number of Guests</label>
+    <input type="number" id="guests" min="1" value="1" required />
+
+    <button type="submit">Confirm Booking</button>
+  </form>
+
+  <div class="success" id="successMsg">Booking Confirmed!</div>
+
+  <div class="booking-list">
+    <h3>Your Bookings</h3>
+    <div id="savedBookings"></div>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('bookingForm');
+  const successMsg = document.getElementById('successMsg');
+  const savedBookingsDiv = document.getElementById('savedBookings');
+
+  function showBookings() {
+    const bookings = JSON.parse(localStorage.getItem('wanderly_bookings')) || [];
+    savedBookingsDiv.innerHTML = bookings.length === 0 ? '<p>No bookings yet.</p>' : '';
+    bookings.forEach((b) => {
+      savedBookingsDiv.innerHTML += `
+        <div class="card">
+          <strong>${b.destination}</strong><br/>
+          Name: ${b.name} (${b.guests} Guests)<br/>
+          Date: ${b.date} | Contact: ${b.contact}
+        </div>
+      `;
+    });
+  }
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const booking = {
+      name: document.getElementById('name').value,
+      contact: document.getElementById('contact').value,
+      destination: document.getElementById('destination').value,
+      date: document.getElementById('date').value,
+      guests: document.getElementById('guests').value
+    };
+
+    const bookings = JSON.parse(localStorage.getItem('wanderly_bookings')) || [];
+    bookings.push(booking);
+    localStorage.setItem('wanderly_bookings', JSON.stringify(bookings));
+
+    successMsg.style.display = 'block';
+    form.reset();
+    showBookings();
+  });
+
+  showBookings();
+</script>
+
+</body>
+</html>
